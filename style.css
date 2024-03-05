@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+}
+
+body{
+    background-color: #fff;
+    margin: 0;
+}
+
+section#navegation {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    padding-right: 10px;
+    color: #fff;
+}
+
+div#nav img{
+    width: auto;
+    height: 38px;
+}
+
+section#home {
+    background-image: url(imagens/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    padding-bottom: 200px;
+}
+
+section#home h1, p{
+    color: #fff;
+}
+
+div#start {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 250px;
+    padding-left: 200px;
+
+}
+
+div#start h1 {
+    font-size: 47px;
+
+    padding-bottom: 50px;
+}
+/*About section*/
+
+section#about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+div#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div#title h1{
+    font-size: 40px;
+    color: rgb(162, 0, 255);
+
+    padding-bottom: 20px;
+}
+
+div#title p {
+    font-size: 20px;
+    color: #000;
+}
+
+/*Business section*/
+
+section#business {
+    padding-bottom: 50px;
+    padding-top: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    place-content: center;
+    gap: 48px 60px;
+}
+
+div#services {
+    background: rgb(51, 51, 51);;
+    border: 2px solid #323238;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 40px;
+
+    overflow: hidden;
+}
+
+div#services p {
+    color: #C4C4CC;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 14px 22px 22px;
+  }
+
+div#services h2 {
+    color: #E1E1E6;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 14px 32px 0;
+  }
+
+/*Project section*/
+
+div#project {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: aqua;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+div#proj h1 {
+    font-size: 50px;
+
+    padding-bottom: 20px;
+}
+
+div#proj p {
+    font-size: 20px;
+
+    padding-bottom: 20px;
+}
+
+div#proj img{
+    width: auto;
+    height: 300px;
+}
+
+button {
+    background-color: blueviolet;
+
+}
+
+a {
+    text-decoration: none;
+}

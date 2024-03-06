@@ -42,7 +42,11 @@ section#home {
     padding-bottom: 200px;
 }
 
-section#home h1, p{
+section#home h1{
+    color: #fff;
+}
+
+section#home p{
     color: #fff;
 }
 
@@ -60,7 +64,7 @@ div#start {
 div#start h1 {
     font-size: 47px;
 
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 /*About section*/
 

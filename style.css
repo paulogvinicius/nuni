@@ -17,6 +17,12 @@ section#navegation {
     padding-bottom: 10px;
 }
 
+button {
+    padding: 14px 32px 15px 32px;
+    border: none;
+    border-radius: 30px;
+}
+
 a{
     text-decoration: none;
     padding-right: 10px;
@@ -159,4 +165,44 @@ button {
 
 a {
     text-decoration: none;
+}
+
+/*budget section*/
+
+section#budget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+div#assessment h1, p {
+    color: #000;
+}
+
+div#assessment h1 {
+    font-size: 60px;
+}
+
+div#assessment p {
+    font-size: 20px;
+
+    padding-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer h3 {
+    color: #fff;
 }

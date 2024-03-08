@@ -17,7 +17,11 @@ section#navegation {
     padding-bottom: 10px;
 }
 
-
+button {
+    padding: 14px 32px 15px 32px;
+    border: none;
+    border-radius: 30px;
+}
 
 a{
     text-decoration: none;
@@ -97,17 +101,19 @@ section#business {
     display: grid;
     grid-template-columns: repeat(3, 370px);
     place-content: center;
-    gap: 48px 60px;
+    gap: 12px;
 }
 
 div#services {
-    background: rgb(51, 51, 51);;
-    border: 2px solid #323238;
+    background: #f3f2f2;
     border-radius: 8px;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+
+    padding: 80px 10px 80px 10px;
 
     padding-top: 40px;
 
@@ -115,21 +121,20 @@ div#services {
 }
 
 div#services p {
-    color: #C4C4CC;
+    color: #a19f9f;
     font-size: 12px;
     font-weight: 600;
     padding: 14px 22px 22px;
   }
 
 div#services h2 {
-    color: #E1E1E6;
+    color: #b7b7b9;
     font-weight: 900;
     font-size: 20px;
     padding: 14px 32px 0;
   }
 
 /*Project section*/
-
 
 .page1 {
     background-color:#ABC6BF;
@@ -236,6 +241,7 @@ div#proj button {
 a {
     text-decoration: none;
 }
+
 
 /*budget section*/
 

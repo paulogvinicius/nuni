@@ -21,6 +21,8 @@ button {
     padding: 14px 32px 15px 32px;
     border: none;
     border-radius: 30px;
+
+    background-color: aqua;
 }
 
 a{
@@ -136,58 +138,7 @@ div#services h2 {
 
 /*Project section*/
 
-.page1 {
-    background-color:#ABC6BF;
-    display: flex;
-    flex-direction: column;
-}
-.page1 div h1 {
-    font-family: 'Dosis', 'regular' ;
-    color: #000;
-    font-size: 60px;
-    font-weight: 500;
-    margin-bottom: -150px;
-    margin-top: 50px;
 
-
-
-}
-.page2 {
-    background-color: rgb(0, 250, 62);
-}
-.page3 {
-    background-color: rgb(30, 255, 225);
-}
-.page4 {
-    background-color: rgb(173, 30, 255);
-}
-.page5 {
-    background-color: rgb(30, 34, 255);
-}
-.page6 {
-    background-color: rgb(255, 251, 30);
-}
-.page7 {
-    background-color: rgb(0, 0, 0);
-}
-.interface{
-    height: 100vh;
-    overflow-y: scroll;
-
-    
-}
-.interface section {
-    height: 100vh;
-    scroll-snap-align: center;
-    display: flex;
-    position: sticky;
-    top: 0;
-    left: 0;
-    align-items: center;
-    justify-content: center;
-    color: aliceblue;
-    
-}
 div#project {
     width: 100%;
     height:100%;
@@ -224,22 +175,6 @@ div#proj img{
    
     width: 109%;
     height: 105%;
-}
-
-div#proj button {
-    margin-top: 100px;
-    font-size: 30px;
-    width: 453px;
-    height: 84px;
-    /* UI Properties */
-    background: #7831D7;
-    border-radius: 25px;
-    opacity: 1;
-
-}
-
-a {
-    text-decoration: none;
 }
 
 
@@ -281,4 +216,88 @@ footer {
 
 footer h3 {
     color: #fff;
+}
+
+
+
+@media only screen and (max-width: 713px) {
+    /*home*/
+    section#home {
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    section#home h1{
+        font-size: 25px;
+    }
+    
+    section#home p{
+        font-size: 15px;
+    }
+
+    /* home start */
+    div#start {
+        display: inline-block;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    
+        padding-top: 80px;
+        padding-left: 80px;
+    
+    }
+
+    /*About section*/
+    div#title h1{
+        font-size: 25px;
+    
+        padding-bottom: 20px;
+    }
+    
+    div#title p {
+        font-size: 15px;
+    }
+    
+
+    /*Business section*/
+
+    section#business {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#services {
+        padding: 50px;
+        }
+
+    div#services p {
+        padding: 14px;
+      }
+    
+    div#services h2 {
+        font-size: 20px;
+      }
+    /*Budget section */
+    div#assessment h1 {
+        font-size: 30px;
+    }
+    
+    div#assessment p {
+        font-size: 13px;
+    
+        padding-bottom: 20px;
+    }
+    
+
+    /*footer*/
+    footer h3{
+        font-size: 10px;
+    }
+
+    footer img {
+        height: auto;
+        width: 40px;
+    }
 }

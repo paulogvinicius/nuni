@@ -74,6 +74,10 @@ div#start p {
 /*About section*/
 
 section#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -271,12 +275,17 @@ display:none;
 }
 
 .interface{
+    
     height: 100vh;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 .interface section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     height: 100vh;
     scroll-snap-align: center;
     display: flex;

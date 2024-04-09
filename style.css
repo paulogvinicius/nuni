@@ -300,20 +300,28 @@ section#budget {
     padding-bottom: 200px;
 }
 #budget #assessment button{
-    padding: 5px 60px 5px 60px;
+    padding: 10px 60px 10px 60px;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #7831D7;
 }
-div#assessment h1, p {
-    color: #000;
-}
+div#assessment button a {
+    font-family: 'Dosis', 'regular' ;
+    font-size: 20px;
+    color: #ffffff;
+} 
+
 
 div#assessment h1 {
+    color: #000;
+    font-family: 'Kdam Thmor Pro', 'regular' ;
+    font-weight: 100;
     font-size: 60px;
 }
 
 div#assessment p {
+    color: #000;
+    font-family: 'Dosis', 'regular' ;
     font-size: 20px;
 
     padding-bottom: 20px;
@@ -330,7 +338,9 @@ footer {
 }
 
 footer h3 {
+    font-family: 'Kdam Thmor Pro', 'regular' ;
     color: #fff;
+    font-weight: 100;
 }
 footer #end img{
     width: auto;

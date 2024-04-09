@@ -299,7 +299,12 @@ section#budget {
     padding-top: 200px;
     padding-bottom: 200px;
 }
-
+#budget #assessment button{
+    padding: 5px 60px 5px 60px;
+    border: none;
+    border-radius: 15px;
+    background-color: #7831D7;
+}
 div#assessment h1, p {
     color: #000;
 }
@@ -326,6 +331,10 @@ footer {
 
 footer h3 {
     color: #fff;
+}
+footer #end img{
+    width: auto;
+    height: 50px;
 }
 
 

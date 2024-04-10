@@ -36,11 +36,9 @@ div#nav {
 
 #home {
     display: flex;
-    align-items: center;
-    background-image: url('imagens/background.png'); 
-    background-size: 100%; 
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-image: url('imagens/background.png'); 
     color: white; 
     padding: 340px 0;
   
@@ -55,7 +53,7 @@ section#home p{
 }
 
 div#start {
-    display: inline-block;
+
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -224,66 +222,6 @@ div#proj img{
     font-family: 'Dosis', 'regular' ;
 }
 
-
-.page2 {
-    background-color:#c6abab;
-    display: flex;
-    flex-direction: column;
-}
-.page2 div h1 {
-display:none; 
-}
-.page2 #project h2{
-    font-family: 'Kdam Thmor Pro', 'regular' ;
-}
-.page2 #project p {
-    font-family: 'Dosis', 'regular' ;
-}
-.page2 #project #proj button{
-    padding: 5px 60px 5px 60px;
-    border: none;
-    border-radius: 15px;
-    background-color: #7831D7;
-}
-.page2 #project #proj button a {
-
-    font-size: 25px;
-    font-family: 'Dosis', 'regular' ;
-}
-
-.page3 {
-    background-color:#c4c6ab;
-    display: flex;
-    flex-direction: column;
-}
-.page3 div h1 {
-    display:none; 
-}
-.page3 #project h2{
-    font-family: 'Kdam Thmor Pro', 'regular' ;
-}
-.page3 #project p {
-    font-family: 'Dosis', 'regular' ;
-}
-.page3 #project #proj button{
-    padding: 5px 60px 5px 60px;
-    border: none;
-    border-radius: 15px;
-    background-color: #7831D7;
-}
-.page3 #project #proj button a {
-
-    font-size: 25px;
-    font-family: 'Dosis', 'regular' ;
-}
-
-.interface{
-    
-    height: 100vh;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
 .interface section {
     display: flex;
     align-items: center;
@@ -291,12 +229,7 @@ display:none;
     text-align: center;
     height: 100vh;
     scroll-snap-align: center;
-    display: flex;
     position: sticky;
-    top: 0;
-    left: 0;
-    align-items: center;
-    justify-content: center;
     color: aliceblue;
 }
 
@@ -364,8 +297,7 @@ footer #end img{
 @media only screen and (max-width: 713px) {
     /*home*/
     section#home {
-        background-size: 100%;
-        background-repeat: no-repeat;
+
     }
     
     section#home h1{

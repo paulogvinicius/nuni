@@ -25,7 +25,12 @@ a{
     color: #fff;
 }
 
-div#nav img{
+div#logo{
+    
+}
+
+div#logo img{
+    
     width: auto;
     height: 50px;
 }
@@ -34,43 +39,112 @@ div#nav {
     font-family: 'Dosis', 'regular' ;
 }
 
-#home {
+.burger {
     display: flex;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url('imagens/background.png'); 
-    color: white; 
-    padding: 340px 0;
-  
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    margin-left: 120px;
 }
 
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+
+  height: 4px;
+  width: 100%;
+  background: #7831D7;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-50%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  top: 0;
+  left: 5px;
+  transform: rotate(405deg);
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  top: 28px;
+  left: 5px;
+  transform: rotate(-405deg);
+}
+
+
 section#home h1{
-    color: #ffffff;
+    color: #990000;
 }
 
 section#home p{
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 56%, 40%);
 }
 
-div#start {
-
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-
-    padding-left: 200px;
-
+.fundo {
+    position: relative; 
+    width: 100%; 
+    margin: 0 ; 
 }
+
+.fundo img {
+    width: 100%; 
+    height: auto; 
+}
+
+#start {
+    display: flex;
+    flex-direction:column;
+    position: absolute; 
+    top: 50%; 
+    left: 30%; 
+    transform: translate(-50%, -50%);
+    color: white; 
+ 
+}
+
 
 div#start h1 {
     font-size: 3.1em;
-    font-family: 'Kdam Thmor Pro', 'regular' ;
+    font-family: 'Kdam Thmor Pro', 'regular';
     font-weight: 100;
-    padding-bottom: 30px;
+    padding-bottom: 3vh; 
 }
 div#start p {
     font-size: 1.1em;
-    font-family: 'Dosis', 'regular' ;
+    font-family: 'dosis', 'regular';
+    font-weight: 100;
+    padding-bottom: 1vh;
 }
 /*About section*/
 
@@ -91,42 +165,45 @@ div#title {
 }
 
 div#title h1{
-    font-size: 3.1em;
-    font-family: 'Kdam Thmor Pro', 'regular' ;
+    font-size: 3.1vw;
+    font-family: 'Kdam Thmor Pro', 'regular';
     font-weight: 100;
+    padding-bottom: 3vh; 
     color: rgb(162, 0, 255);
-    padding-bottom: 20px;
+
 }
 
 div#title p {
-    font-size: 1.5em;
-    font-family: 'Dosis', 'regular' ;
+    font-size: 2.1vw;
+    font-family: 'dosis', 'regular';
+    font-weight: 100;
+    padding-bottom: 1vh;
     color: #000;
 }
 
 /*Business section*/
 
 section#business {
+    
     padding-bottom: 50px;
     padding-top: 10px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 370px);
-    place-content: center;
-    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 div#services {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: #f3f2f2;
     border-radius: 8px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-
+    width: 350px;
+    height: 230px;
+    margin: 20px;
     padding: 80px 10px 80px 10px;
-
     padding-top: 40px;
 
     overflow: hidden;
@@ -295,55 +372,74 @@ footer #end img{
 
 
 @media only screen and (max-width: 713px) {
-    /*home*/
-    section#home {
+    section#navegation {
 
-    }
-    
-    section#home h1{
-        font-size: 25px;
-    }
-    
-    section#home p{
-        font-size: 15px;
-    }
-
-    /* home start */
-    div#start {
-        display: inline-block;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-    
-        padding-top: 80px;
-        padding-left: 80px;
-    
-    }
-
-    /*About section*/
-    div#title h1{
-        font-size: 25px;
-    
-        padding-bottom: 20px;
-    }
-    
-    div#title p {
-        font-size: 15px;
-    }
-    
-
-    /*Business section*/
-
-    section#business {
-        flex-direction: column;
         display: flex;
+    }
+    div#nav{
+
+    }
+    div#logo{
+        display: flex;
+        align-content: center;
         justify-content: center;
-        align-items: center;
+        margin-left: 42%;
+    }
+    div#nav img{
+        width: auto;
+        height: 50px;
+        margin-right: 110px;
+    
     }
 
-    div#services {
-        padding: 50px;
+    div#nav a {
+        display: none;
+    }
+    #start {
+
+        top: 50%; 
+        left: 38%; 
         }
+    div#start h1 {
+        font-size: 6.1vw;
+        font-family: 'Kdam Thmor Pro', 'regular';
+        font-weight: 100;
+        padding-bottom: 3vh; 
+    }
+    div#start p {
+        font-size: 3.1vw;
+        font-family: 'dosis', 'regular';
+        font-weight: 100;
+        padding-bottom: 1vh;
+    }
+
+
+    div#title h1{
+        font-size: 5.1vw;
+        font-family: 'Kdam Thmor Pro', 'regular';
+        font-weight: 100; 
+        color: rgb(162, 0, 255);
+
+    }
+
+    div#title p {
+        font-size: 4.1vw;
+        font-family: 'dosis', 'regular';
+        font-weight: 100;
+        padding-bottom: 1vh;
+        color: #000;
+    }
+    /*Business section*/
+    
+div#services {
+
+    width: 300px;
+    height: 200px;
+}
+    section#business {
+
+    }
+
 
     div#services p {
         padding: 14px;

@@ -11,26 +11,42 @@ section#navegation {
     background-color: #000;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 10px;
     padding-bottom: 10px;
     
+    
 }
 
+#nav {
+    position: fixed;
+    top: 0; /* Ajuste conforme necessário */
+    right: 80px; /* Define o menu no lado direito da página */
+   
+    padding: 20px; /* Adiciona algum espaço ao redor dos itens do menu */
+}
 
+#nav a {
+   
+    margin-bottom: 10px; /* Adiciona um espaço entre os links */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    color: #ffffff; /* Cor do texto dos links */
+}
 
 a{  
     text-decoration: none;
-    padding-right: 10px;
+    padding-right: 20px;
     color: #fff;
 }
 
 div#logo{
-    
+
+    margin-left: 100px;
 }
 
 div#logo img{
-    
+
     width: auto;
     height: 50px;
 }
@@ -40,7 +56,7 @@ div#nav {
 }
 
 .burger {
-    display: flex;
+    display: none;
     position: relative;
     width: 40px;
     height: 30px;
@@ -51,12 +67,12 @@ div#nav {
 }
 
 .burger input {
-  display: none;
+    display: none;
 }
 
 .burger span {
-  display: block;
-  position: absolute;
+    display: none;
+    position: absolute;
 
   height: 4px;
   width: 100%;
@@ -126,8 +142,8 @@ section#home p{
     display: flex;
     flex-direction:column;
     position: absolute; 
-    top: 50%; 
-    left: 30%; 
+    top: 35%; 
+    left:30%; 
     transform: translate(-50%, -50%);
     color: white; 
  
@@ -372,6 +388,19 @@ footer #end img{
 
 
 @media only screen and (max-width: 713px) {
+    .burger {
+        display: flex;
+        margin-left: 0px;
+    }
+    
+    .burger input {
+      display: none;
+    }
+    
+    .burger span {
+      display: block;
+    }
+    
     section#navegation {
 
         display: flex;

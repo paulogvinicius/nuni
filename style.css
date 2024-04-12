@@ -6,117 +6,69 @@ body{
     background-color: #fff;
     margin: 0;
 }
-
-section#navegation {
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-    
-}
-
-#nav {
-    position: fixed;
-    top: 0; /* Ajuste conforme necessário */
-    right: 80px; /* Define o menu no lado direito da página */
-   
-    padding: 20px; /* Adiciona algum espaço ao redor dos itens do menu */
-}
-
-#nav a {
-   
-    margin-bottom: 10px; /* Adiciona um espaço entre os links */
-    text-decoration: none; /* Remove sublinhado padrão dos links */
-    color: #ffffff; /* Cor do texto dos links */
-}
-
-a{  
+.header {
+    background: rgb(0, 0, 0);
+    padding-inline: 16px;
+  }
+  a {
+    font-family: 'dosis, sans-serif';
     text-decoration: none;
-    padding-right: 20px;
+  }
+  .nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50%;
+  }
+  
+  .nav-list {
+    
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-family: 'dosis', 'regular';
+    font-size: 18px;
     color: #fff;
-}
-
-div#logo{
-
-    margin-left: 100px;
-}
-
-div#logo img{
-
-    width: auto;
-    height: 50px;
-}
-div#nav {
-    font-size: 1.2em;
-    font-family: 'Dosis', 'regular' ;
-}
-
-.burger {
+    padding-block: 16px;
+  }
+  
+  .hero {
+    height: calc(100vh - 70px); /* Define a altura do contêiner, descontando 70px */
+    background: left top / cover no-repeat url("imagens/background.png"); /* Define a imagem de fundo posicionada no canto superior esquerdo */
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .hamburger {
     display: none;
-    position: relative;
-    width: 40px;
-    height: 30px;
-    background: transparent;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
     cursor: pointer;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
     display: block;
-    margin-left: 120px;
-}
-
-.burger input {
-    display: none;
-}
-
-.burger span {
-    display: none;
-    position: absolute;
-
-  height: 4px;
-  width: 100%;
-  background: #7831D7;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-.burger span:nth-of-type(1) {
-  top: 0px;
-  transform-origin: left center;
-}
-
-.burger span:nth-of-type(2) {
-  top: 50%;
-  transform: translateY(-50%);
-  transform-origin: left center;
-}
-
-.burger span:nth-of-type(3) {
-  top: 100%;
-  transform-origin: left center;
-  transform: translateY(-50%);
-}
-
-.burger input:checked ~ span:nth-of-type(1) {
-  top: 0;
-  left: 5px;
-  transform: rotate(405deg);
-}
-
-.burger input:checked ~ span:nth-of-type(2) {
-  width: 0%;
-  opacity: 0;
-}
-
-.burger input:checked ~ span:nth-of-type(3) {
-  top: 28px;
-  left: 5px;
-  transform: rotate(-405deg);
-}
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+  }
+  
 
 
 section#home h1{
@@ -128,6 +80,7 @@ section#home p{
 }
 
 .fundo {
+    
     position: relative; 
     width: 100%; 
     margin: 0 ; 
@@ -139,13 +92,13 @@ section#home p{
 }
 
 #start {
+
     display: flex;
-    flex-direction:column;
-    position: absolute; 
-    top: 35%; 
-    left:30%; 
-    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     color: white; 
+    
  
 }
 
@@ -154,13 +107,16 @@ div#start h1 {
     font-size: 3.1em;
     font-family: 'Kdam Thmor Pro', 'regular';
     font-weight: 100;
+    margin-left: -40%;
     padding-bottom: 3vh; 
+    padding-top: 20%;
 }
 div#start p {
+    margin-left: -43%;
     font-size: 1.1em;
     font-family: 'dosis', 'regular';
     font-weight: 100;
-    padding-bottom: 1vh;
+    padding-bottom: 16vh;
 }
 /*About section*/
 
@@ -184,6 +140,7 @@ div#title h1{
     font-size: 3.1vw;
     font-family: 'Kdam Thmor Pro', 'regular';
     font-weight: 100;
+    margin-top: 10%;
     padding-bottom: 3vh; 
     color: rgb(162, 0, 255);
 
@@ -193,8 +150,9 @@ div#title p {
     font-size: 2.1vw;
     font-family: 'dosis', 'regular';
     font-weight: 100;
+    margin-top: 10%;
     padding-bottom: 1vh;
-    color: #000;
+    color: #000000;
 }
 
 /*Business section*/
@@ -314,7 +272,9 @@ div#proj img{
     font-size: 25px;
     font-family: 'Dosis', 'regular' ;
 }
-
+.interface {
+    
+}
 .interface section {
     display: flex;
     align-items: center;
@@ -322,7 +282,7 @@ div#proj img{
     text-align: center;
     height: 100vh;
     scroll-snap-align: center;
-    position: sticky;
+
     color: aliceblue;
 }
 
@@ -388,18 +348,80 @@ footer #end img{
 
 
 @media only screen and (max-width: 713px) {
-    .burger {
-        display: flex;
-        margin-left: 0px;
-    }
+    .hero {
+        height: calc(220vh - 70px);
+        background: center / cover no-repeat url("imagens/background.png");
+        justify-content: center;
+        flex-direction:column
+      }
+      
+   
+    .hamburger {
+        display: block;
+        z-index: 2;
+      }
     
-    .burger input {
-      display: none;
-    }
+      .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #a5c;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
     
-    .burger span {
-      display: block;
-    }
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    
+        pointer-events: none;
+      }
+    
+      .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+      }
+    
+      .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+      }
+    
+      .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+      }
+    
+      .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+      }
+    
+      /* Estilos ativos */
+    
+      .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+      }
+    
+      .nav.active .nav-list a {
+        opacity: 1;
+      }
+    
+      .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+      }
+    
+      .nav.active .hamburger::before {
+        transform: rotate(135deg);
+      }
+    
+      .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
     
     section#navegation {
 
@@ -408,37 +430,29 @@ footer #end img{
     div#nav{
 
     }
-    div#logo{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        margin-left: 42%;
-    }
-    div#nav img{
-        width: auto;
-        height: 50px;
-        margin-right: 110px;
-    
-    }
 
-    div#nav a {
-        display: none;
-    }
+
+
+
     #start {
 
         top: 50%; 
         left: 38%; 
         }
+        
     div#start h1 {
         font-size: 6.1vw;
         font-family: 'Kdam Thmor Pro', 'regular';
         font-weight: 100;
         padding-bottom: 3vh; 
     }
+
     div#start p {
+
         font-size: 3.1vw;
         font-family: 'dosis', 'regular';
         font-weight: 100;
+        margin-left: -22%;
         padding-bottom: 1vh;
     }
 

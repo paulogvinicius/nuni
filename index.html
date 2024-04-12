@@ -13,50 +13,30 @@
 </head>
 <body >
 
-    <section id="navegation">
-
-        <div id="logo">
-            <img src="imagens/nunilogo.png" alt="logo nunisoftware">
-        </div>
-
-        <div id="nav">
-            <a href="">Sobre</a>
-            <a href="">Contato</a>
-            <a href="">Serviços</a>
-            <a href="">Sites desenvolvidos</a>
-        </div>
-        
-        <label for="burger" class="burger">
-            <input id="burger" type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-    </section>
+    <header class="header">
+            <nav class="nav">
+              <a href="/" class="logo">
+                <img src="imagens/nunilogo.png" alt="logo nunisoftware">
+              </a>
+              <button class="hamburger"></button>
+              <ul class="nav-list">
+                <li><a href="#">Sites Desenvolvidos</a></li>
+                <li><a href="#">Orçamento</a></li>
+                <li><a href="#">Menu</a></li>
+              </ul>
+            </nav>
+    </header>
 
 
-    <div class="fundo">
-      <img src="imagens/background.png">
-      <div id="start">
-        <h1>Inovação digital <br> para o seu negócio.</h1>
-        <p>Junte-se a nós para transformar sua visão em realidade digital. </p>
-     </div>
-      
-    </div>
-
-
-
-
-    <section id="about">
-
+    <main class="hero">
+        <div id="start">
+            <h1>Inovação digital <br> para o seu negócio.</h1>
+            <p>Junte-se a nós para transformar sua visão em realidade digital. </p>
+        </div>    
         <div id="title">
             <h1>Potencializando sua presença online</h1>
             <p>Design ao desenvolvimento</p>
         </div>
-
-
-    </section>
-
     <section id="business">
 
         <div id="services">
@@ -139,9 +119,17 @@
         <div id="end">
             <img src="imagens/nunilogo.png" alt="">
         </div>
+    </main>
+
+
+
+
     </footer>
     <script>
-        
+        const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
     </script>
 </body>
 </html>

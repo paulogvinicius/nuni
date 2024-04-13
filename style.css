@@ -42,20 +42,22 @@ body{
     padding-block: 16px;
   }
   
-  .hero {
+  .hero {   
+    width: 100%; 
     height: calc(100vh - 70px); /* Define a altura do contêiner, descontando 70px */
-    background: left top / cover no-repeat url("imagens/background.png"); /* Define a imagem de fundo posicionada no canto superior esquerdo */
+    background: top center / cover no-repeat url("imagens/background.png"); /* Define a imagem de fundo posicionada no canto superior esquerdo */
     justify-content: center;
     flex-direction: column;
   }
   
   .hamburger {
-
+    
     display: none;
     border: none;
     background: none;
     border-top: 3px solid #ffffff;
     cursor: pointer;
+ 
   }
   
   .hamburger::after,
@@ -220,9 +222,9 @@ div#proj p {
 
 }
 
-div#proj img{
+div#projeto img{
 
-   
+    max-width: 100%;
     width: 89%;
     height: 85%;
 }
@@ -272,8 +274,26 @@ div#proj img{
     font-family: 'Dosis', 'regular' ;
     color: #000;
 }
+.page1 #project #projeto button{
+    display: none;
+    bottom: 10px; /* Define a distância do botão até a parte inferior do contêiner .page1 */
+    left: 50%; /* Define a posição horizontal do botão */
+    transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+    padding: 5px 10px; 
+    border: none;
+    border-radius: 15px;
+    background-color: #2cf704; 
+
+}
+.page1 #project #projeto button a {
+
+    font-size: 20px;
+    font-family: 'Dosis', 'regular' ;
+    color: #000;
+}
+
 .interface {
-    
+    z-index: 2;
 }
 .interface section {
     display: flex;
@@ -345,8 +365,8 @@ footer #end img{
 }
 
 @media only screen and (max-width: 1185px){
-    div#proj img{
-        width: 69%;
+    div#projeto img{
+        width: 79%;
        
     }
     .page1 {
@@ -369,14 +389,22 @@ footer #end img{
 
 }
 
-@media only screen and (max-width: 958px) {
+@media only screen and (max-width: 957px) {
 
-    div#proj img{
-        margin-bottom: 10%;
-        width: 59%;
+    div#projeto img{
+        margin-bottom: 20%;
+        width: 69%;
        
     }
+
+    .page1 #project p {
+        font-size: 3.1vw;
+    } 
     .page1 #project #proj button{
+ display: none;
+    }
+    .page1 #project #projeto button{
+        display: block;
         position: absolute; /* Define o posicionamento absoluto para o botão */
         bottom: 10px; /* Define a distância do botão até a parte inferior do contêiner .page1 */
         left: 50%; /* Define a posição horizontal do botão */
@@ -384,8 +412,14 @@ footer #end img{
         padding: 5px 10px; 
         border: none;
         border-radius: 15px;
-        background-color: #7831D7; 
+        background-color: #7831D7;
     
+    }
+    .page1 #project #projeto button a {
+    
+        font-size: 20px;
+        font-family: 'Dosis', 'regular' ;
+        color: #000;
     }
 
 }
@@ -401,7 +435,7 @@ footer #end img{
    
     .hamburger {
         display: block;
-        z-index: 2;
+        z-index: 3;
       }
     
       .nav-list {
@@ -413,22 +447,24 @@ footer #end img{
         background: #a5c;
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
-    
+        z-index: 2;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         gap: 0;
-    
         pointer-events: none;
       }
     
       .nav-list a {
-        font-size: 24px;
+        margin-right: 50px;
+        font-size: 25px;
         opacity: 0;
       }
     
       .nav-list li:nth-child(1) a {
         transition: 0.5s 0.2s;
+
+
       }
     
       .nav-list li:nth-child(2) a {
@@ -444,6 +480,7 @@ footer #end img{
       .nav.active .nav-list {
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
+
       }
     
       .nav.active .nav-list a {
@@ -519,9 +556,8 @@ footer #end img{
             color: #ffffff;
         }
 
-
-        .page1 {
-            position: relative; 
+        .interface {
+            z-index: 2;
         }
 
         .page1 div h1 {
@@ -536,12 +572,13 @@ footer #end img{
         .page1 #project p {
             font-size: 3.1vw;
         } 
-        div#proj img{
+        div#projeto img{
             width: 65%;
             margin-bottom: 22%;
         }
 
-        .page1 #project #proj button{
+
+        .page1 #project #projeto button{
             position: absolute; /* Define o posicionamento absoluto para o botão */
             bottom: 10px; /* Define a distância do botão até a parte inferior do contêiner .page1 */
             left: 50%; /* Define a posição horizontal do botão */
@@ -549,7 +586,7 @@ footer #end img{
             padding: 5px 10px; 
             border: none;
             border-radius: 15px;
-            background-color: #7831D7; 
+            background-color: #7831D7;
         
         }
 
@@ -609,7 +646,7 @@ footer #end img{
     .page1 #project p {
         font-size: 4.1vw;
     } 
-    div#proj img{
+    div#projeto img{
         width: 95%;
         margin-bottom: 35%;
     }
@@ -642,7 +679,7 @@ footer #end img{
     div#services img{
         width: 20%;
     }
-    div#proj img{
+    div#projeto img{
         width: 75%;
         margin-bottom: 85%;
     }

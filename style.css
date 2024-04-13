@@ -50,10 +50,11 @@ body{
   }
   
   .hamburger {
+
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #fff;
+    border-top: 3px solid #ffffff;
     cursor: pointer;
   }
   
@@ -63,7 +64,7 @@ body{
     display: block;
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #fcfcfc;
     margin-top: 5px;
     position: relative;
     transition: 0.3s;
@@ -71,13 +72,6 @@ body{
   
 
 
-section#home h1{
-    color: #990000;
-}
-
-section#home p{
-    color: hsl(0, 56%, 40%);
-}
 
 .fundo {
     
@@ -214,63 +208,69 @@ div#project {
 }
 
 div#proj{
-    margin-top: 300px;
+
     }
 div#proj h2 {
 
     font-family: 'Dosis', 'regular' ;
-    color: #000;
-    font-size: 60px;
-    font-weight: 500;
 
-    padding-bottom: 20px;
 }
 
 div#proj p {
-    color: #fff;
-    font-family: 'Dosis';
-    font-size: 39px;
 
-    padding-bottom: 20px;
 }
 
 div#proj img{
 
    
-    width: 109%;
-    height: 105%;
+    width: 89%;
+    height: 85%;
 }
 
 
 .page1 {
-    background-color:#ABC6BF;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    background-color:#ABC6BF;
+
+
 }
 .page1 div h1 {
+    font-size: 3.1em;
+    font-family: 'Kdam Thmor Pro', 'regular';
+    font-weight: 100;
+    padding-bottom: 3vh; 
+    padding-top: 50%;
+    color: #000;
+}
+.page1 #project h2{
     font-family: 'Kdam Thmor Pro', 'regular' ;
     color: #000;
     font-size: 60px;
     font-weight: 500;
-    margin-bottom: -150px;
-    margin-top: 50px;
-}
-.page1 #project h2{
-    font-family: 'Kdam Thmor Pro', 'regular' ;
+    padding-bottom: 20px;
 }
 .page1 #project p {
     font-family: 'Dosis', 'regular' ;
+    color: #fff;
+    font-family: 'Dosis';
+    font-size: 39px;
+    padding-bottom: 20px;
 }
 .page1 #project #proj button{
     padding: 5px 60px 5px 60px;
     border: none;
     border-radius: 15px;
     background-color: #7831D7;
+
 }
 .page1 #project #proj button a {
 
     font-size: 25px;
     font-family: 'Dosis', 'regular' ;
+    color: #000;
 }
 .interface {
     
@@ -293,9 +293,8 @@ section#budget {
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #budget #assessment button{
     padding: 10px 60px 10px 60px;
@@ -345,11 +344,55 @@ footer #end img{
     height: 50px;
 }
 
+@media only screen and (max-width: 1185px){
+    div#proj img{
+        width: 69%;
+       
+    }
+    .page1 {
+        position: relative; 
+    }
+    
+    .page1 div h1 {
+        font-size: 4.1vw;
+    }
+    div#proj{
+        margin-top: 30px;
+    }
+    .page1 #project h2{
+        font-size: 4.1vw;
+    } 
+    .page1 #project p {
+        font-size: 2.1vw;
+    } 
 
+
+}
+
+@media only screen and (max-width: 958px) {
+
+    div#proj img{
+        margin-bottom: 10%;
+        width: 59%;
+       
+    }
+    .page1 #project #proj button{
+        position: absolute; /* Define o posicionamento absoluto para o botão */
+        bottom: 10px; /* Define a distância do botão até a parte inferior do contêiner .page1 */
+        left: 50%; /* Define a posição horizontal do botão */
+        transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+        padding: 5px 10px; 
+        border: none;
+        border-radius: 15px;
+        background-color: #7831D7; 
+    
+    }
+
+}
 
 @media only screen and (max-width: 713px) {
     .hero {
-        height: calc(220vh - 70px);
+        height: calc(280vh - 70px);
         background: center / cover no-repeat url("imagens/background.png");
         justify-content: center;
         flex-direction:column
@@ -441,6 +484,7 @@ footer #end img{
         }
         
     div#start h1 {
+   
         font-size: 6.1vw;
         font-family: 'Kdam Thmor Pro', 'regular';
         font-weight: 100;
@@ -458,60 +502,151 @@ footer #end img{
 
 
     div#title h1{
+        margin-top: 50%;
         font-size: 5.1vw;
         font-family: 'Kdam Thmor Pro', 'regular';
         font-weight: 100; 
         color: rgb(162, 0, 255);
 
+
     }
 
-    div#title p {
+        div#title p {
+            font-size: 5.1vw;
+            font-family: 'dosis', 'regular';
+            font-weight: 100;
+            padding-bottom: 1vh;
+            color: #ffffff;
+        }
+
+
+        .page1 {
+            position: relative; 
+        }
+
+        .page1 div h1 {
+            font-size: 7.1vw;
+        }
+        div#proj{
+            margin-top: 30px;
+        }
+        .page1 #project h2{
+            font-size: 6.1vw;
+        } 
+        .page1 #project p {
+            font-size: 3.1vw;
+        } 
+        div#proj img{
+            width: 65%;
+            margin-bottom: 22%;
+        }
+
+        .page1 #project #proj button{
+            position: absolute; /* Define o posicionamento absoluto para o botão */
+            bottom: 10px; /* Define a distância do botão até a parte inferior do contêiner .page1 */
+            left: 50%; /* Define a posição horizontal do botão */
+            transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+            padding: 5px 10px; 
+            border: none;
+            border-radius: 15px;
+            background-color: #7831D7; 
+        
+        }
+
+
+            /*Business section*/
+        
+            div#services {
+
+                width: 300px;
+                height: 200px;
+            }
+                section#business {
+
+            }
+
+
+            div#services p {
+                padding: 14px;
+            }
+            
+            div#services h2 {
+                font-size: 20px;
+            }
+            /*Budget section */
+            div#assessment h1 {
+                font-size: 30px;
+            }
+            
+            div#assessment p {
+                font-size: 13px;
+            
+                padding-bottom: 20px;
+            }
+            
+
+            /*footer*/
+            footer h3{
+                font-size: 10px;
+            }
+
+            footer img {
+                height: auto;
+                width: 40px;
+            }
+        }
+@media only screen and (max-width: 450px){
+    
+    .page1 div h1 {
+        font-size: 8.1vw;
+    }
+    div#proj{
+        margin-top: 30px;
+    }
+    .page1 #project h2{
+        font-size: 7.1vw;
+    } 
+    .page1 #project p {
         font-size: 4.1vw;
-        font-family: 'dosis', 'regular';
-        font-weight: 100;
-        padding-bottom: 1vh;
-        color: #000;
+    } 
+    div#proj img{
+        width: 95%;
+        margin-bottom: 35%;
     }
-    /*Business section*/
     
-div#services {
-
-    width: 300px;
-    height: 200px;
+    div#services {
+        width: 280px;
+        height: 150px;
+    }
 }
-    section#business {
-
+@media only screen and (max-width: 320px){
+    div#services {
+        width: 230px;
+        height: 80px;
     }
-
-
-    div#services p {
-        padding: 14px;
-      }
-    
     div#services h2 {
-        font-size: 20px;
+        color: #959597;
+        font-size: 1.1em;
+        font-family: 'Kdam Thmor Pro', 'regular' ;
+        font-weight: 1;
+        padding: 14px 32px 0;
       }
-    /*Budget section */
-    div#assessment h1 {
-        font-size: 30px;
-    }
     
-    div#assessment p {
-        font-size: 13px;
     
-        padding-bottom: 20px;
+    div#services p {
+        color: #a19f9f;
+        font-size: 0.8em;
+        font-family: Dosis,Regular;
+        padding: 14px 22px 22px;
+      }
+    div#services img{
+        width: 20%;
     }
-    
-
-    /*footer*/
-    footer h3{
-        font-size: 10px;
-    }
-
-    footer img {
-        height: auto;
-        width: 40px;
+    div#proj img{
+        width: 75%;
+        margin-bottom: 85%;
     }
 }
+
 
 

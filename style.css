@@ -42,13 +42,7 @@ body{
     padding-block: 16px;
   }
   
-  .hero {   
-    width: 100%; 
-    height: calc(100vh - 70px); /* Define a altura do contêiner, descontando 70px */
-    background: top center / cover no-repeat url("imagens/background.png"); /* Define a imagem de fundo posicionada no canto superior esquerdo */
-    justify-content: center;
-    flex-direction: column;
-  }
+
   
   .hamburger {
     
@@ -73,66 +67,85 @@ body{
   }
   
 
+.hero {
+    justify-content: center;
+    align-items: center;
 
-
-.fundo {
-    
-    position: relative; 
-    width: 100%; 
-    margin: 0 ; 
+    position: relative; /* Define o posicionamento relativo para permitir posicionamento absoluto dos elementos filhos */
+    width: 100%; /* Largura do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na página */
 }
 
-.fundo img {
-    width: 100%; 
-    height: auto; 
+.hero .fundo img {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner pai */
+    height: auto; /* Altura ajustada automaticamente para manter a proporção */
 }
 
 #start {
+    position: absolute; /* Define o posicionamento absoluto para sobrepor a imagem de fundo */
+    transform: translate(-50%, -50%); /* Desloca o elemento 50% do seu tamanho para a esquerda e para cima */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Adiciona espaço interno */
+  
+}
 
+
+
+
+#start {
+    margin-left: 30%;
+    margin-top: -25%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white; 
+    color: rgb(255, 255, 255); 
+
     
  
 }
 
 
 div#start h1 {
-    font-size: 3.1em;
+    font-size: 4.1vw;
     font-family: 'Kdam Thmor Pro', 'regular';
     font-weight: 100;
-    margin-left: -40%;
     padding-bottom: 3vh; 
-    padding-top: 20%;
 }
 div#start p {
-    margin-left: -43%;
-    font-size: 1.1em;
+
+    font-size: 2.1vw;
     font-family: 'dosis', 'regular';
     font-weight: 100;
     padding-bottom: 16vh;
+    
 }
 /*About section*/
 
 section#about {
+    
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    
 }
 
 div#title {
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    
 }
 
 div#title h1{
+    
     font-size: 3.1vw;
     font-family: 'Kdam Thmor Pro', 'regular';
     font-weight: 100;
@@ -272,7 +285,7 @@ div#projeto img{
 
     font-size: 25px;
     font-family: 'Dosis', 'regular' ;
-    color: #000;
+    color: #ffffff;
 }
 .page1 #project #projeto button{
     display: none;
@@ -419,7 +432,7 @@ footer #end img{
     
         font-size: 20px;
         font-family: 'Dosis', 'regular' ;
-        color: #000;
+        color: #ffffff;
     }
 
 }
@@ -431,7 +444,11 @@ footer #end img{
         justify-content: center;
         flex-direction:column
       }
-      
+      .hero .fundo img {
+        display: none;
+        width: 100%; /* A imagem ocupa toda a largura do contêiner pai */
+        height: auto; /* Altura ajustada automaticamente para manter a proporção */
+    }
    
     .hamburger {
         display: block;
@@ -516,8 +533,13 @@ footer #end img{
 
     #start {
 
-        top: 50%; 
-        left: 38%; 
+        margin-left: 30%;
+        margin-top: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(255, 255, 255); 
         }
         
     div#start h1 {
@@ -525,7 +547,7 @@ footer #end img{
         font-size: 6.1vw;
         font-family: 'Kdam Thmor Pro', 'regular';
         font-weight: 100;
-        padding-bottom: 3vh; 
+        
     }
 
     div#start p {
@@ -533,8 +555,8 @@ footer #end img{
         font-size: 3.1vw;
         font-family: 'dosis', 'regular';
         font-weight: 100;
-        margin-left: -22%;
-        padding-bottom: 1vh;
+
+
     }
 
 
